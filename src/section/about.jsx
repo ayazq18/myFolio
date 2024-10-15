@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from 'react';
-import { Box, Button, Card, FormControl, Stack, TextField, Typography, useMediaQuery, useTheme } from '@mui/material';
+import { useEffect, useRef } from 'react';
+import { Box, Button, FormControl, Stack, TextField, Typography, useMediaQuery, useTheme } from '@mui/material';
 import { Icon } from '@iconify/react';
 import { keyframes } from '@emotion/react';
 import gsap from 'gsap';

@@ -1,22 +1,18 @@
-import { Box, Card, Grid, keyframes, Typography, useTheme } from '@mui/material'
+import { Box, Card, Grid, Typography, useMediaQuery, useTheme } from '@mui/material'
 import React, { useEffect, useRef } from 'react'
 import { techData } from '../mock/techData'
 import { Icon } from '@iconify/react';
 import gsap from 'gsap';
+import MyProject from './myProject';
 
-const rotateImage = keyframes`
-  from {
-    transform: rotateX(0deg) rotateY(180deg);
-  }
-  to {
-    transform: rotateX(360deg) rotateY(0deg);
-  }
-`;
 
-function TechSkills({ isMobile }) {
+
+function TechSkills( ) {
     const theme = useTheme()
     const techCardRef = useRef([])
     const mainRef = useRef(null)
+    const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+
 
     techCardRef.current = techData.map((_, i) => techCardRef.current[i] ?? React.createRef());
 

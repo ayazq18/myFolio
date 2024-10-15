@@ -64,4 +64,7 @@ export const _socials = [
   export const STATUS_OPTIONS = [
     { value: 'home', label: 'Home', icon: 'line-md:home-simple-filled', path: '/home' },
     { value: 'about', label: 'About', icon: 'cib:about-me', path: '/about' },
+    { value: 'tech', label: 'TechStack', icon: 'ic:round-devices', path: '/tech' },
+    { value: 'project', label: 'My Work', icon: 'mdi:folder-open-outline', path: '/projects' },
+
 ];

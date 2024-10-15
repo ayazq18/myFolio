@@ -1,9 +1,7 @@
 // import Stack from '@mui/material/Stack';
-import { Box, Stack } from '@mui/system';
-import Container from '@mui/material/Container';
+import { Box } from '@mui/system';
 import Grid from '@mui/material/Unstable_Grid2';
-import { Button, Typography } from '@mui/material';
-import SeoIllustration from './seo-illustration';
+import { Typography } from '@mui/material';
 import AppWelcome from './app-welcome';
 import { useTheme } from '@emotion/react';
 import { Icon } from '@iconify/react';
@@ -11,7 +9,7 @@ import { projectData } from '../mock/myProjects';
 
 // ----------------------------------------------------------------------
 
-export default function MyProject({icon}) {
+export default function MyProject() {
 
     const theme = useTheme()
     const handleWatchButtonClick = (path) => {
@@ -37,7 +35,7 @@ export default function MyProject({icon}) {
 
             <Grid container spacing={2} xs={12} md={12} sx={{ mt: 1, mb:2, display:'flex', justifyContent:'center', }}>
                 {projectData.map((item, index) => (
-                    <Grid item xs={12} md={6} key={index} mb={3}>
+                    <Grid item xs={12} md={12} key={index} mb={3}>
                         <AppWelcome
                             img={item.image}
                             action={

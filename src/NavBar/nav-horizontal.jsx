@@ -1,12 +1,10 @@
-import React, { useCallback, useEffect, useState, useRef } from 'react';
+import { useCallback, useEffect, useState, useRef } from 'react';
 import { alpha, Box, Card, Drawer, IconButton, Tab, Tabs, Typography, useTheme } from '@mui/material';
 import { Icon } from '@iconify/react';
 import { gsap } from 'gsap';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import '../App.css'
 import { useThemeContext } from '../context/ThemeContext';
-import LightModeIcon from '@mui/icons-material/LightMode';
-import DarkModeIcon from '@mui/icons-material/DarkMode';
 import { STATUS_OPTIONS } from '../mock/speedDial';
 import { useNavigate } from 'react-router-dom';
 
@@ -17,7 +15,6 @@ function NavHorizontal() {
     const roleRef = useRef(null);
     const { toggleTheme, mode } = useThemeContext();
     const [toggle, setToggle] = useState(false);
-    const [toggleThemee, setToggleTheme] = useState(false);
     const [productSelected, setProductSelected] = useState('home');
 
     // Sync the tab selection with the route
@@ -194,7 +191,7 @@ function NavHorizontal() {
                         <Typography
                             id='name'
                             sx={{
-                                color: '#fbd6a5',
+                                color: '#393951',
                                 fontSize: '24px',
                                 fontWeight: '500',
                                 textTransform: 'uppercase',
@@ -206,7 +203,7 @@ function NavHorizontal() {
                         <Typography
                             ref={roleRef}
                             sx={{
-                                color: '#f8ba3a',
+                                color: '#1877f2',
                                 fontSize: '16px',
                                 textTransform: 'uppercase',
                                 opacity: 0,

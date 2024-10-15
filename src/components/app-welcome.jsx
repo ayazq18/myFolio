@@ -18,7 +18,6 @@ export default function AppWelcome({
   govtTitle,
   action,
   img,
-  newsImage,
   ...other
 }) {
   const theme = useTheme();
@@ -32,7 +31,7 @@ export default function AppWelcome({
           startColor: alpha(theme.palette.primary.light, 0.2),
           endColor: alpha(theme.palette.primary.main, 0.2),
         }),
-        height: { md: 1 },
+        height: {md:500},
         borderRadius: 2,
         position: 'relative',
         color: 'primary.darker',

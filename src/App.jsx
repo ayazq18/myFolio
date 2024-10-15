@@ -4,6 +4,9 @@ import NavHorizontal from './NavBar/nav-horizontal';
 import SpeedDialer from './components/speedDial';
 import Home from './section/home';
 import About from './section/about';
+import TechSkills from './components/techSkills';
+import MyProject from './components/myProject';
+
 
 function App() {
   return (
@@ -24,6 +27,9 @@ function App() {
           <Route path="/" index element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/tech" element={<TechSkills />} />
+          <Route path="/projects" element={<MyProject />} />
+
         </Routes>
       </Box>
     </Router>

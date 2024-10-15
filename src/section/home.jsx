@@ -1,10 +1,8 @@
-import { alpha, Box, Card, Stack, Typography, useMediaQuery, useTheme } from '@mui/material';
+import { alpha, Box, Card, Typography, useMediaQuery, useTheme } from '@mui/material';
 import gsap from 'gsap';
 import React, { useEffect, useRef, useState } from 'react';
 import { social_icons } from '../mock/speedDial';
 import { keyframes } from '@emotion/react';
-import TechSkills from '../components/techSkills';
-import MyProject from '../components/myProject';
 import Footer from '../components/Footer';
 import Social from '../components/social';
 
@@ -94,7 +92,7 @@ function Home() {
                             animation: `${rotateImage} 4s linear`,
                         }}
                     >
-                        <img src='/public/image.jpeg' style={{ width: '200px', height: 'auto', borderRadius: `0 ${borderRadius} ${borderRadius} 0`, }} />
+                        <img src='/image.jpeg' style={{ width: '200px', height: 'auto', borderRadius: `0 ${borderRadius} ${borderRadius} 0`, }} />
                     </Card>
                 </Box>
                 <Box sx={{ p: 1, height: '300px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start', gap: 2 }}>
@@ -107,9 +105,9 @@ function Home() {
                 </Box>
             </Box>
 
-            <TechSkills isMobile={isMobile}/>
+            {/* <TechSkills isMobile={isMobile}/> */}
 
-            <MyProject icon={icon}/>
+            {/* <MyProject icon={icon}/> */}
             <Footer theme = {theme} />
         </Box>
     );
